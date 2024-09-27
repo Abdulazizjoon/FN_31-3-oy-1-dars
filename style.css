@@ -2,7 +2,8 @@
     --text-color:#fff;
     --background-color:#000;
 }
-body{
+
+.body{
     background-color: var(--background-color);
     color: var(--text-color);
     transition: all 0.5s ease-in-out;
@@ -10,7 +11,7 @@ body{
 h1{
     text-align: center;
 }
-body:has(.darkmode:checked){
+.body:has(.darkmode:checked){
     --text-color:#000;
     --background-color:#fff;
 }
@@ -23,37 +24,15 @@ body:has(.darkmode:checked){
     appearance: none;
     background-color: transparent;
 }
-body{
+.body{
     place-items: center;
     display: grid;
-    min-height: 100vh;
+    min-height:100vh;
     overflow: hidden;
     cursor: pointer;
 }
 
 
-div.a {
-    white-space: nowrap; 
-    width: 50px; 
-    overflow: hidden;
-    text-overflow:  clip; 
-  }
-  
-div.b {
-    white-space: nowrap; 
-    width: 50px; 
-    overflow: hidden;
-    text-overflow: ellipsis; 
-}
-  
-div.c {
-    white-space: nowrap; 
-    width: 50px; 
-    overflow: hidden;
-}
 
-.gradient {
-    height: 200px;
-    background-color: red;
-    background-image: linear-gradient(red, yellow);
-}
+
+
